@@ -1,0 +1,38 @@
+Mysql (tables)
+Name
+	Parts
+Fields
+	id, part_name, part_serial, part_purchase_date, part_in_use, part_moves(collection)
+
+
+Name
+	Kits
+Fields
+	id, kit_name, kit_serial, kit_parts(collection), kit_setup_date, kit_in_use, kit_moves(collection)
+
+Name
+	Locations
+Fields
+	id, loc_name
+
+Name
+	Disposition
+Fileds
+	id, kit_id, loc_id
+
+
+Mongo (Collections)
+Name
+	part_moves
+Document
+	{date: install, move, repare, dismiss}
+
+Name
+	kit_parts
+Document
+	{id: comment}
+
+Name
+	kit_moves
+Document
+	{date: install, move, repare, dismiss}
